@@ -1,13 +1,13 @@
 /*https://pat1077.github.io/profile/*/
 
 body {
-  background: url('images/banner_photo.jpg');
+  margin:0;
+  background-color: #deeede;
   color: #333;
   font-family: 'Varela Round', sans-serif;
   font-size: 20px;
   line-height: 1.5em;
   font-weight: lighter;
-  margin-top: 0px;
 }
 
 h1, h2, h3 {
@@ -19,7 +19,7 @@ h1 {
   color: #305252;
 }
 
-h2 {
+h3 {
   font-size: 23px;
   color: #89608e;
 }
@@ -33,30 +33,20 @@ a:hover {
   color: #89608e;
 }
 
-#button_blue {
-  background-color: #89608e;
-  color: #FFF;
-  padding:10px 30px;
-  border-radius: 5px;
-}
-
-#button_blue:hover {
-  background-color: #305252;
-}
-
-.container{
+#container {
   width: 50%;
   margin: 20px auto;
 }
 
-.card {
-  background-color: #EEE;
-  margin: 20px auto;
-  padding: 40px;
-  border:1px solid #999;
-  border-radius: 5px;
-  box-shadow:3px 3px 3px #AAA;
+#main {
+  width: 100%;
+  display: flex;
+}
+
+#header {
+  background-color: #ff05;
   text-align: center;
+  padding: 25px;
 }
 
 #logo_circle {
@@ -66,73 +56,19 @@ a:hover {
   border:2px solid #89608e;
 }
 
+#left {
+  width: 30%;
+  background-color: #0ff5;
+  padding: 25px;
+
 ul{
   padding-left: 0px;
 }
 
-.list_inline li {
-  list-style: none;
-  display: inline;
-  padding: 0px 30px;
-}
-
-.photo_film {
-  width: 100px;
-  padding-right: 40px;
-  padding-top: 10px;
-}
-
-.banner {
-  height: 200px;
-  margin:0px;
-  background-size: cover;
-  margin-left: 100px;
-  display:flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.logo h1 {
-  font-size: 100px;
-  color: #89608e;
-  margin:0px 80px 0px 300px;
-  font-weight: bolder;
-}
-
-.main-name h1 {
-  font-size: 70px;
-  color: #89608e;
-  margin: 0;
-  font-weight: bolder;
-  line-height: 1.2;
-}
-
-
-.band{
-  width: 320px;
-  display:inline-block;
-  text-align: center;
-  padding:40px;
-  margin-top: 0px;
-}
-
-.photo_band {
-  width: 300px;
-}
-
-#sidebar {
-background-color: #384047;
-position: fixed;
-left: 0px;
-top: 0px;
-bottom: 0px;
-width: 120px;
-text-align: center;
-}
-
-#sidebar li{
-  list-style: none;
-  padding: 20px 0px;
+#right {
+  width: 70%;
+  background-color: #0f05;
+  padding: 25px;
 }
 
 @media (max-width: 960px) {
