@@ -1,104 +1,159 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Basic infos</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700" rel="stylesheet">
+    <title>Pat1077 Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Varela+Round" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
-    <div class="container">
-      <div class="card">
-        <img src="images/photo_logo.jpg" alt="Patricia Martinez" id="logo_circle">
-        <h1>Patricia Martinez Pena</h1>
-        <h2>Future programmer</h2>
+    <div class="banner">
+      <div class="logo"><h1>&lt;/ &gt;</h1></div>
+      <div class="main-name"><h1>Patricia <br> Martinez</h1></div>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li>
+          <a href="#logo_circle">
+            <i class="fa fa-info-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorite-movies">
+            <i class="fa fa-file-video-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#footer">
+            <i class="fa fa-life-ring"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content">
+      <div class="container">
+        <div class="card">
+          <img src="images/photo_logo.jpg" alt="Patricia Martinez" id="logo_circle">
+          <h2>Fullstack Developper</h2>
+          <p>
+            Starting to code in 2009 using LAMP, I've worked for friends and local business 'til 2014. Moved to France in 2015, I have continued learnig JS and RubyOnRails. In love with insightful front-end and powerful back-end engaged to improve the #Nets.
+          </p>
 
-        <p>
-          Durante a&ntilde;os trabajando en hosteler&iacute;a por fuerza mayor, ahora he encontrado tiempo para aprender lo que me gusta,<strong> programar y crear p&aacute;ginas y apicaciones web.</strong>.
-        </p>
+          <a href="#" id="button_blue">See for yourself</a>
+        </div>
 
-        <a href="#" id="button_blue">See for yourself</a>
+        <div class="card list_inline">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com">
+                <i class="fa fa-facebook"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com">
+                <i class="fa fa-linkedin"></i> Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com">
+                <i class="fa fa-twitter"></i> Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card" id="favorite-movies">
+          <h2>Best bands ever</h2>
+          <div class="band">
+            <a href="https://pearljam.com/band">
+              <img src="images/pearl_jam.jpg" alt="pearl jam" class="photo_band">
+              <h3>Pearl Jam</h3>
+            </a>
+            <p>October 22, 2015 officially marked 25 years of Pearl Jam performing live. Ten studio albums, hundreds of unique live performances and hundreds of official live concert bootleg releases later, the band continue to be critically acclaimed and commercially successful -- with over 85 million albums sold worldwide.</p>
+          </div>
+          <div class="band">
+            <a href="http://www.nin.com/">
+              <img src="images/nin.jpg" alt="Nine Ich Nails" class="photo_band">
+              <h3>Nine inch nails</h3>
+            </a>
+            <p>Our score for the film Bird Box is now available for purchase in high-resolution here.  This same version is available on streaming services here.  Like all soundtrack records we release, we aim for these to play like albums that take you on a journey and can exist as companion pieces to the films AND as their own separate works.</p>
+          </div>
+          <div class="band">
+            <a href="http://www.ledzeppelin.com">
+              <img src="images/led_zeppelin.jpg" alt="Led Zeppelin" class="photo_band">
+              <h3>Led Zeppelin</h3>
+            </a>
+            <p>Led Zeppelin foi un grupo de rock inglés fundado en 1968 polo guitarrista Jimmy Page trala disolución do seu anterior grupo, The Yardbirds. Coa colaboración do baixista John Paul Jones, ó que xa coñecía de antigos traballos, a inclusión de Robert Plant como vocalista e John Bonham como batería, quedaría conformada unha das bandas máis importantes da historia do rock, fundadores do Hard rock e mesmo do heavy metal. Tamén en toda a súa discografía se inclúen influencias de blues, reggae, soul, funk, jazz, música celta, folk e country. </p>
+          </div>
+          <div class="band">
+            <a href="https://skunkanansie.com/">
+              <img src="images/skunk.jpg" alt="Skunk Anansie" class="photo_band">
+              <h3>Skunk Anansie</h3>
+            </a>
+            <p>Skunk Anansie are a British rock band whose members include Skin (lead vocals, guitar), Cass (guitar, bass, backing vocals), Ace (guitar, backing vocals) and Mark Richardson (drums and percussion). Skunk Anansie formed on 12 February 1994, disbanded in 2001 and reformed in 2009. The name "Skunk Anansie" is taken from Akann folk tales of Anansi the spider-man of Ghana, with "Skunk" added to "make the name nastier". They have released six studio albums: Paranoid & Sunburnt (1995), Stoosh (1996)</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>My Favorite movies</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="images/trainspotting.jpg" alt="trainspotting" class="photo_film">
+                </td>
+                <td>
+                  <h3>Trainspotting</h3>
+                  <p>Renton, deeply immersed in the Edinburgh drug scene, tries to clean up and get out, despite the allure of the drugs and influence of friends.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/point_break.jpg" alt="Point Break"class="photo_film">
+                </td>
+                <td>
+                  <h3>Point Break</h3>
+                  <p>An F.B.I. Agent goes undercover to catch a gang of surfers who may be bank robbers. </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/reservoir_dogs.jpg" alt="Reservoir Dogs" class="photo_film">
+                </td>
+                <td>
+                  <h3>Reservoir Dogs</h3>
+                  <p>When a simple jewelry heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant. </p>
+                </td>
+              </tr>
+            </tbody>
+          <div>
+        </table>
       </div>
 
-      <div class="card list_inline">
+      <div class="card list_inline" id="footer">
+        <h2>About this page</h2>
+        This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon a Nantes</a>. That was probably the best experience of my entire life.
+
         <ul>
-          <li>
-            <a href="https://www.facebook.com">
-              <i class="fa fa-facebook"></i> Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com">
-              <i class="fa fa-linkedin"></i> Linkedin
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com">
-              <i class="fa fa-twitter"></i> Twitter
-            </a>
-          </li>
+         <li>
+           <a href="#">
+             <i class="fa fa-heart"></i>
+           </a>
+         </li>
+         <li>
+           <a href="#">
+             <i class="fa fa-share"></i>
+           </a>
+         </li>
+         <li>
+           <a href="#">
+             <i class="fa fa-star"></i>
+           </a>
+         </li>
         </ul>
       </div>
-
-      <div class="card">
-        <h2>My Favorite movies</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <img src="images/trainspotting.jpg" alt="trainspotting" class="photo_film">
-              </td>
-              <td>
-                <h3>Trainspotting</h3>
-                <p>Renton, deeply immersed in the Edinburgh drug scene, tries to clean up and get out, despite the allure of the drugs and influence of friends.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="images/point_break.jpg" alt="Point Break"class="photo_film">
-              </td>
-              <td>
-                <h3>Point Break</h3>
-                <p>An F.B.I. Agent goes undercover to catch a gang of surfers who may be bank robbers. </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="images/reservoir_dogs.jpg" alt="Reservoir Dogs" class="photo_film">
-              </td>
-              <td>
-                <h3>Reservoir Dogs</h3>
-                <p>When a simple jewelry heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant. </p>
-              </td>
-            </tr>
-          </tbody>
-        <div>
-      </table>
-    </div>
-
-    <div class="card list_inline">
-      <h2>About this page</h2>
-      This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon a Nantes</a>. That was probably the best experience of my entire life.
-
-      <ul>
-       <li>
-         <a href="#">
-           <i class="fa fa-heart"></i>
-         </a>
-       </li>
-       <li>
-         <a href="#">
-           <i class="fa fa-share"></i>
-         </a>
-       </li>
-       <li>
-         <a href="#">
-           <i class="fa fa-star"></i>
-         </a>
-       </li>
-      </ul>
     </div>
   </body>
 </html>
