@@ -1,15 +1,17 @@
+/*https://pat1077.github.io/profile/*/
+
 body {
-  margin:0;
-  background-color: #CCC;
+  background: url('images/banner_photo.jpg');
   color: #333;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 20px;
   line-height: 1.5em;
   font-weight: lighter;
+  margin-top: 0px;
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rock Salt', cursive;
 }
 
 h1 {
@@ -19,7 +21,7 @@ h1 {
 
 h2 {
   font-size: 23px;
-  color: #70abaf;
+  color: #89608e;
 }
 
 a {
@@ -28,11 +30,11 @@ a {
 }
 
 a:hover {
-  color: #70abaf;
+  color: #89608e;
 }
 
 #button_blue {
-  background-color: #70abaf;
+  background-color: #89608e;
   color: #FFF;
   padding:10px 30px;
   border-radius: 5px;
@@ -61,9 +63,10 @@ a:hover {
   width: 100px;
   height: 100px;
   border-radius: 50px;
+  border:2px solid #89608e;
 }
 
-.list_inline ul{
+ul{
   padding-left: 0px;
 }
 
@@ -77,4 +80,76 @@ a:hover {
   width: 100px;
   padding-right: 40px;
   padding-top: 10px;
+}
+
+.banner {
+  height: 200px;
+  margin:0px;
+  background-size: cover;
+  margin-left: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo h1 {
+  font-size: 100px;
+  color: #89608e;
+  margin:0px 80px 0px 300px;
+  font-weight: bolder;
+}
+
+.main-name h1 {
+  font-size: 70px;
+  color: #89608e;
+  margin: 0;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+
+.band{
+  width: 320px;
+  display:inline-block;
+  text-align: center;
+  padding:40px;
+  margin-top: 0px;
+}
+
+.photo_band {
+  width: 300px;
+}
+
+#sidebar {
+background-color: #384047;
+position: fixed;
+left: 0px;
+top: 0px;
+bottom: 0px;
+width: 120px;
+text-align: center;
+}
+
+#sidebar li{
+  list-style: none;
+  padding: 20px 0px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
 }
