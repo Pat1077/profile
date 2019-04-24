@@ -1,7 +1,9 @@
+/*https://pat1077.github.io/profile/*/
+
 body {
-  background-color: #CCC;
+  background: url('images/banner_photo.jpg');
   color: #333;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 20px;
   line-height: 1.5em;
   font-weight: lighter;
@@ -9,7 +11,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rock Salt', cursive;
 }
 
 h1 {
@@ -19,7 +21,7 @@ h1 {
 
 h2 {
   font-size: 23px;
-  color: #70abaf;
+  color: #89608e;
 }
 
 a {
@@ -28,11 +30,11 @@ a {
 }
 
 a:hover {
-  color: #70abaf;
+  color: #89608e;
 }
 
 #button_blue {
-  background-color: #70abaf;
+  background-color: #89608e;
   color: #FFF;
   padding:10px 30px;
   border-radius: 5px;
@@ -61,7 +63,7 @@ a:hover {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  border:2px solid #70abaf;
+  border:2px solid #89608e;
 }
 
 ul{
@@ -81,21 +83,30 @@ ul{
 }
 
 .banner {
-  height: 600px;
+  height: 200px;
   margin:0px;
   background-size: cover;
-  background: linear-gradient(160deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 0.8) 100%), url('images/banner_photo.jpg');
   margin-left: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.banner p {
-  font-size: 85px;
-  color: #70abafaa;
-  padding-top: 500px;
-  margin: 0;
-  padding-left: 50px;
+.logo h1 {
+  font-size: 100px;
+  color: #89608e;
+  margin:0px 80px 0px 300px;
   font-weight: bolder;
 }
+
+.main-name h1 {
+  font-size: 70px;
+  color: #89608e;
+  margin: 0;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
 
 .band{
   width: 320px;
