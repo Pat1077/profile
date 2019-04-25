@@ -25,6 +25,24 @@ h2 {
   color: #e98a15;
   text-transform: uppercase;
   padding-top: 30px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: lighter;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #333; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+h3 {
+  font-size: 18px;
+  color: #89608e;
 }
 
 ul {
@@ -101,9 +119,27 @@ a:hover {
   border:2px solid #e98a15;
 }
 
+#main {
+  width: 100%;
+  display: flex;
+}
+
+#header {
+  text-align: center;
+  padding: 35px;
+  border-bottom: 5px dotted #89608e;
+}
+
+#logo_circle {
+  width: 70%;
+  border-radius: 50%;
+  border:2px solid #89608e;
+}
+
 #left {
   width: 30%;
   padding: 35px;
+  margin-right: 5px dotted #89608e;
   text-align: center;
 }
 
