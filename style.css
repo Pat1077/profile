@@ -2,29 +2,34 @@
 
 body {
   margin:0;
-  background-color: #deeede;
-  color: #333;
+  background-color: #ece5f0;
+  color: #012622;
   font-family: 'Varela Round', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5em;
-  font-weight: lighter;
+}
+
+p {
+  margin:0;
+  padding:0;
 }
 
 h1 {
   font-family: 'Rock Salt', cursive;
-  font-size: 40px;
-  color: #89608e;
+  font-size: 35px;
+  color: #661358;
 }
 
 h2 {
-  font-size: 20px;
-  color: #305252;
+  font-size: 24px;
+  color: #e98a15;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 ul {
-  padding: 15px;
+  margin: 0px;
+  padding: 0 15px;
   list-style: none;
 }
 
@@ -34,7 +39,7 @@ ul li {
 
 ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #333; /* Change the color */
+  color: #e98a15; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
@@ -42,22 +47,47 @@ ul li::before {
 }
 
 h3 {
-  font-size: 18px;
-  color: #89608e;
+  font-size: 20px;
+  color: #003b36;
+  margin: 25px 0px 10px 0px;
 }
 
 a {
   text-decoration: none;
-  color: #555;
+  color: #661358;
 }
 
 a:hover {
-  color: #89608e;
+  color: #e98a15;
 }
 
 #container {
   width: 60%;
-  margin: 20px auto;
+  margin: 0px auto;
+  padding: 50px;
+}
+
+#header {
+  text-align: center;
+  padding: 35px;
+  border-bottom: 5px dotted #661358;
+}
+
+#title {
+  text-align: right;
+  padding:10px;
+  height:35px;
+  position: relative;
+  bottom: 40px;
+  left: 250px;
+  z-index: -1;
+}
+
+#title h2 {
+  background-color: #e98a15;
+  color: #ece5f0;
+  padding:5px;
+  width: 70%;
 }
 
 #main {
@@ -65,22 +95,15 @@ a:hover {
   display: flex;
 }
 
-#header {
-  text-align: center;
-  padding: 35px;
-  border-bottom: 5px dotted #89608e;
-}
-
 #logo_circle {
   width: 70%;
   border-radius: 50%;
-  border:2px solid #89608e;
+  border:2px solid #e98a15;
 }
 
 #left {
   width: 30%;
   padding: 35px;
-  margin-right: 5px dotted #89608e;
   text-align: center;
 }
 
@@ -89,21 +112,42 @@ a:hover {
   padding: 25px;
 }
 
+#skills ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
+  #container {
     width: 700px;
+  }
+
+  #title{
+    position: static;
+    display: block;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .container {
+  #container {
     width: 500px;
+  }
+
+  #main{
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
+  #container {
     width: 300px;
+  }
+
+  #main{
+    display: flex;
+    flex-direction: column;
   }
 }
