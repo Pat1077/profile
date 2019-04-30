@@ -28,7 +28,6 @@ h2 {
   font-family: 'Varela Round', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  font-weight: lighter;
 }
 
 ul li::before {
@@ -91,6 +90,11 @@ a:hover {
   border-bottom: 5px dotted #661358;
 }
 
+#header i {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
 #title {
   text-align: right;
   padding:10px;
@@ -116,24 +120,12 @@ a:hover {
 #logo_circle {
   width: 70%;
   border-radius: 50%;
-  border:2px solid #e98a15;
+  border: 4px solid #661358;
 }
 
 #main {
   width: 100%;
   display: flex;
-}
-
-#header {
-  text-align: center;
-  padding: 35px;
-  border-bottom: 5px dotted #89608e;
-}
-
-#logo_circle {
-  width: 70%;
-  border-radius: 50%;
-  border:2px solid #89608e;
 }
 
 #left {
