@@ -1,155 +1,181 @@
 /*https://pat1077.github.io/profile/*/
 
 body {
-  background: url('images/banner_photo.jpg');
-  color: #333;
+  margin:0;
+  background-color: #ece5f0;
+  color: #012622;
   font-family: 'Varela Round', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5em;
-  font-weight: lighter;
-  margin-top: 0px;
 }
 
-h1, h2, h3 {
-  font-family: 'Rock Salt', cursive;
+p {
+  margin:0;
+  padding:0;
 }
 
 h1 {
-  font-size: 30px;
-  color: #305252;
+  font-family: 'Rock Salt', cursive;
+  font-size: 35px;
+  color: #661358;
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 24px;
+  color: #e98a15;
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #333; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+h3 {
+  font-size: 18px;
   color: #89608e;
+}
+
+ul {
+  margin: 0px;
+  padding: 0 15px;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 5px
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #e98a15; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+h3 {
+  font-size: 20px;
+  color: #003b36;
+  margin: 25px 0px 10px 0px;
 }
 
 a {
   text-decoration: none;
-  color: #555;
+  color: #661358;
 }
 
 a:hover {
-  color: #89608e;
+  color: #e98a15;
 }
 
-#button_blue {
-  background-color: #89608e;
-  color: #FFF;
-  padding:10px 30px;
-  border-radius: 5px;
+#container {
+  width: 60%;
+  margin: 0px auto;
+  padding: 50px;
 }
 
-#button_blue:hover {
-  background-color: #305252;
-}
-
-.container{
-  width: 50%;
-  margin: 20px auto;
-}
-
-.card {
-  background-color: #EEE;
-  margin: 20px auto;
-  padding: 40px;
-  border:1px solid #999;
-  border-radius: 5px;
-  box-shadow:3px 3px 3px #AAA;
+#header {
   text-align: center;
+  padding: 35px;
+  border-bottom: 5px dotted #661358;
+}
+
+#header i {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+#title {
+  text-align: right;
+  padding:10px;
+  height:35px;
+  position: relative;
+  bottom: 40px;
+  left: 250px;
+  z-index: -1;
+}
+
+#title h2 {
+  background-color: #e98a15;
+  color: #ece5f0;
+  padding:5px;
+  width: 70%;
+}
+
+#main {
+  width: 100%;
+  display: flex;
 }
 
 #logo_circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  border:2px solid #89608e;
+  width: 70%;
+  border-radius: 50%;
+  border: 4px solid #661358;
 }
 
-ul{
-  padding-left: 0px;
+#main {
+  width: 100%;
+  display: flex;
 }
 
-.list_inline li {
-  list-style: none;
-  display: inline;
-  padding: 0px 30px;
-}
-
-.photo_film {
-  width: 100px;
-  padding-right: 40px;
-  padding-top: 10px;
-}
-
-.banner {
-  height: 200px;
-  margin:0px;
-  background-size: cover;
-  margin-left: 100px;
-  display:flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.logo h1 {
-  font-size: 100px;
-  color: #89608e;
-  margin:0px 80px 0px 300px;
-  font-weight: bolder;
-}
-
-.main-name h1 {
-  font-size: 70px;
-  color: #89608e;
-  margin: 0;
-  font-weight: bolder;
-  line-height: 1.2;
-}
-
-
-.band{
-  width: 320px;
-  display:inline-block;
+#left {
+  width: 30%;
+  padding: 35px;
+  margin-right: 5px dotted #89608e;
   text-align: center;
-  padding:40px;
-  margin-top: 0px;
 }
 
-.photo_band {
-  width: 300px;
+#right {
+  width: 70%;
+  padding: 25px;
 }
 
-#sidebar {
-background-color: #384047;
-position: fixed;
-left: 0px;
-top: 0px;
-bottom: 0px;
-width: 120px;
-text-align: center;
-}
-
-#sidebar li{
-  list-style: none;
-  padding: 20px 0px;
+#skills ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
+  #container {
     width: 700px;
+  }
+
+  #title{
+    position: static;
+    display: block;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .container {
+  #container {
     width: 500px;
+  }
+
+  #main{
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
+  #container {
     width: 300px;
+  }
+
+  #main{
+    display: flex;
+    flex-direction: column;
   }
 }
